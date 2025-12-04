@@ -119,11 +119,7 @@ app.use(cookieParser());
 // });
 
 app.get('/', (req, res, next) => {
-  for(let i=1; i<10000000000000000; i++){
-
-  };
-  res.json({ message: 'Server is running v4' });
-  
+  return res.json({ message: 'Server is running v4' });
 });
 
 app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(swaggerSpec));
