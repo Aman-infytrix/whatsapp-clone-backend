@@ -119,7 +119,7 @@ app.use(cookieParser());
 // });
 
 app.get('/', (req, res, next) => {
-  res.json({ message: 'Server is running v2' });
+  res.json({ message: 'Server is running v3' });
 });
 
 app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(swaggerSpec));
